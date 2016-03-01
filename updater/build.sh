@@ -13,7 +13,7 @@ do
     git clone git@github.com:jenkins-inc/$r.git
   fi
 
-  msg=$(groovy update.groovy $(cat $r/account) $BUILD_NUMBER)
+  msg=$(groovy "$@" update.groovy $(cat $r/account) $BUILD_NUMBER)
   echo "<html><body><h2>$msg</h2></body></html>" > $r/src/main/webapp/index.jsp
   pushd $r
     git diff --quiet || (

@@ -7,7 +7,6 @@ do
     popd
   else
     git clone git@github.com:jenkins-inc/$r.git
-    git checkout dev
   fi
 
   msg=$(groovy update.groovy $(cat $r/account) $BUILD_NUMBER)

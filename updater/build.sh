@@ -6,7 +6,7 @@ do
       git pull origin
     popd
   else
-    git clone git@github.com:jenkins-demo/$r.git
+    git clone git@github.com:jenkins-inc/$r.git
     git checkout dev
   fi
 

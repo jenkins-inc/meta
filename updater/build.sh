@@ -7,6 +7,7 @@ do
     popd
   else
     git clone git@github.com:jenkins-demo/$r.git
+    git checkout dev
   fi
 
   msg=$(groovy update.groovy $(cat $r/account) $BUILD_NUMBER)
@@ -14,7 +15,7 @@ do
   pushd $r
     git diff --quiet || (
       git commit -a -m "$msg"
-      # git push origin
+      git push origin
     )
   popd
 done

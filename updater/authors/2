@@ -1,2 +1,2 @@
 export GIT_AUTHOR_NAME="Charlie Chapman"
-export GIT_AUTHOR_EMAIL=charlie.chapman@inc.jenkins-ci.org
+export GIT_AUTHOR_EMAIL=charlie.chapman@kohsuke.org

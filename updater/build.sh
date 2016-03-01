@@ -1,4 +1,8 @@
 #!/bin/bash -ex
+
+# manufacture commits as a specific user
+source authors/$(( $BUILD_NUMBER % 5 ))
+
 for r in borat securitay;
 do
   if [ -d $r ]; then

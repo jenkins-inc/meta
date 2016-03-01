@@ -1,0 +1,2 @@
+export GIT_AUTHOR_NAME="Alice Abbot"
+export GIT_AUTHOR_EMAIL=alice.abbot@inc.jenkins-ci.org

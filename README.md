@@ -24,15 +24,15 @@ realistic data.
 * A public "jenkins-inc" github org for the fictional Jenkins, Inc.
     * A handful of repos each containing Node.js hello world webapp
         * We label them “micro service components” to help people mentally picture what this company produces
-        * Each repo will have a one-line Jenkinsfile
+        * Each repo will have [a one-line Jenkinsfile](https://github.com/jenkins-demo/borat/blob/dev/Jenkinsfile)
     * A release engineering repository that defines global-libs
-        * And Jenkinsfile to auto-deploy the change
-* Jenkins instance: demo.jenkins-ci.org
+        * And [Jenkinsfile to auto-deploy the change](https://github.com/jenkins-demo/release-engineering/blob/master/Jenkinsfile)
+* [Jenkins instance](http://demo.jenkins-ci.org/)
     * Access restricted so that anonymous users can only read
-* The pipeline setup for "micro service" (see WiP)
+* The pipeline setup for "micro service" (see [definition](https://github.com/jenkins-demo/release-engineering/blob/master/vars/microService.groovy))
     * Phase 1
         * Triggered by changes get committed by developers to the ‘dev’ branch
-            * We’ll set up a job on ci.jenkins-ci.org to manufacture commits from developers by turning Twitter posts like these into commits.
+            * We’ll set up a job on ci.jenkins-ci.org to manufacture commits from developers by turning Twitter posts like [these](https://twitter.com/devops_borat) into commits.
         * The app gets deployed to the ‘dev’ environment on Heroku
         * Tests run, which is just “sleep 60”
             * To be improved later
